@@ -24,6 +24,7 @@ class Employee:
 
 newemployee = Employee("Miles", 2000)
 
+#complete cluster fuckery
 newemployee.deleteemployee(newemployee.storeemployee(newemployee.addemployee(newemployee.name, newemployee.salary)))
 
 
