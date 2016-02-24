@@ -6,17 +6,15 @@ class Employeedb:
 
 
     def addemployee(self, name, salary):
-        self.employeedict.update({'Name': name, 'Salary': salary})
-        print(self.employeedict.values())
+        self.employeedict[name] = salary
+        print(self.employeedict)
 
 
 
 
 
-newemployee = Employeedb()
-newemployee1 = Employeedb()
-newemployee2 = Employeedb()
+newEmployee = Employeedb()
+newEmployee.addemployee("Mark", 300)
+newEmployee.addemployee("Daniel", 300)
+newEmployee.addemployee("Ben", 9000)
 
-newemployee.addemployee('Spoodman', 20000)
-newemployee1.addemployee('Spoodman', 20000)
-newemployee2.addemployee('Spoodman', 20000)
