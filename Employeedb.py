@@ -14,7 +14,7 @@ class Employeedb:
         for key, val in self.employeedict.items():
             salaries.append(val)
         avg = sum(salaries)/len(salaries)
-        print(avg)
+        return avg
 
 
 
@@ -29,5 +29,5 @@ newEmployee = Employeedb()
 newEmployee.addemployee("Mark", 300)
 newEmployee.addemployee("Richard", 300)
 newEmployee.addemployee("Sheldon", 9000)
-newEmployee.avgsalary()
+print(newEmployee.avgsalary())
 
