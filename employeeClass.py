@@ -1,9 +1,6 @@
 from Employeedb import Employeedb
 
-
-class Employee:
-
-    newEmployee = Employeedb()
+newEmployee = Employeedb()
 
     while True:
         inputName = input("Employee Name: ")
