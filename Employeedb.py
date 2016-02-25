@@ -16,6 +16,13 @@ class Employeedb:
         avg = sum(salaries)/len(salaries)
         return avg
 
+#newemployee = Employeedb()
+#newemployee.addemployee("Rache", 45000)
+#newemployee.addemployee("Vicky", 56778)
+#newemployee.addemployee("Mark", 300)
+#newemployee.addemployee("Richard", 300)
+#newemployee.addemployee("Sheldon", 9000)
+#print(newemployee.avgsalary())
 
 
 
@@ -25,9 +32,4 @@ class Employeedb:
 
 
 
-newEmployee = Employeedb()
-newEmployee.addemployee("Mark", 300)
-newEmployee.addemployee("Richard", 300)
-newEmployee.addemployee("Sheldon", 9000)
-print(newEmployee.avgsalary())
 

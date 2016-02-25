@@ -1,34 +1,20 @@
+from Employeedb import Employeedb
+
+
 class Employee:
-    def __init__(self, name, salary):
-        self.name = name
-        self.salary = salary
 
+    newEmployee = Employeedb()
 
-    def addemployee(self, name, salary):
-        employeedict = ({})
-        employeedict.update({'Name': name, 'Salary': salary})
-        return employeedict
-
-    def storeemployee(self, employeedict):
-        storeemployee = []
-        storeemployee.append(employeedict)
-        for count, element in enumerate(storeemployee):
-            print(count, element)
-        return storeemployee
-
-    def deleteemployee(self, storeemployee):
-        del storeemployee[0]
-        print(storeemployee)
-
-
-
-newemployee = Employee("Miles", 2000)
-
-#complete cluster fuckery
-newemployee.deleteemployee(newemployee.storeemployee(newemployee.addemployee(newemployee.name, newemployee.salary)))
-
-
-
-
-
-
+    while True:
+        inputName = input("Employee Name: ")
+        inputSalary = float(input("Employee Salary: "))
+        newEmployee.addemployee(inputName, inputSalary)
+        print(newEmployee.avgsalary())
+        answer = input("Would you like to continue? Yes or No")
+        if answer == "yes":
+            pass
+        if answer ==" ":
+            print("Please type Yes or No")
+        elif answer == "no":
+            print("Bye!")
+            break
