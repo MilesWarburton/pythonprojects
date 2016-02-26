@@ -2,9 +2,6 @@ class Employeedb:
     def __init__(self):
         self.employeedict = {}
 
-
-
-
     def addemployee(self, name, salary):
         self.employeedict[name] = float(salary)
 
@@ -15,15 +12,6 @@ class Employeedb:
             salaries.append(val)
         avg = sum(salaries)/len(salaries)
         return avg
-
-#newemployee = Employeedb()
-#newemployee.addemployee("Rache", 45000)
-#newemployee.addemployee("Vicky", 56778)
-#newemployee.addemployee("Mark", 300)
-#newemployee.addemployee("Richard", 300)
-#newemployee.addemployee("Sheldon", 9000)
-#print(newemployee.avgsalary())
-
 
 
 
