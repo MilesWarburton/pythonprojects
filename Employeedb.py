@@ -17,7 +17,7 @@ class Employeedb:
                 writer.writerow({'first_name': name, 'salary': float(salary), 'occupation': occupation})
             else:
                 writer.writerow({'first_name': name, 'salary': float(salary), 'occupation': occupation})
-            print(csvfile.tell())
+            
 
 
 
